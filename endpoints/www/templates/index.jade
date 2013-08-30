@@ -1,6 +1,9 @@
 extends /bases/layout
 
 block section
-  section
-    h1 YOI
-    h2 ...easy (but powerful) NodeJS Server
+  if session
+    p Your session is "#{session}"
+    a(href="/logout") Logout
+  else
+    p Without session
+    a(href="/login") Login
