@@ -2,6 +2,10 @@ server:
     host: localhost
     port: 1337
 
+log:
+    request: true
+    response: true
+
 mongo:
 #     - name    : primary
 #       host    : localhost
@@ -13,7 +17,6 @@ mongo:
 redis:
 #     host      : localhost
 #     port      : 6379
-
 
 appnima:
     key: YOUR_APPNIMA_KEY
