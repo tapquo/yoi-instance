@@ -7,17 +7,17 @@ log:
     response: true
 
 mongo:
-#     - name    : primary
-#       host    : localhost
-#       port    : 27017
-#       db      : db_name
-#       user    : db_user
-#       password: db_password
+    - name    : primary
+      host    : localhost
+      port    : 27017
+      db      : db_name
+      user    : db_user
+      password: db_password
 
 redis:
-#     host      : localhost
-#     port      : 6379
+    host      : localhost
+    port      : 6379
 
 appnima:
     key: YOUR_APPNIMA_KEY
-    # host: 
+    host: http://api.appnima.com/

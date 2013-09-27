@@ -15,16 +15,16 @@ endpoints:
 # ------------------------------------------------------------------------------
 # Assets
 # ------------------------------------------------------------------------------
-# assets:
-#     - folder : js
-#       maxage: 3600
-#     - folder: css
-#       maxage: 3600
-#     - folder: img
-#       maxage: 86400
-#     - file:   humans.txt
-#       maxage: 86400
-#     - file:   robots.txt
+assets:
+    - folder : js
+      maxage: 3600
+    - folder: css
+      maxage: 3600
+    - folder: img
+      maxage: 86400
+    - file:   humans.txt
+      maxage: 86400
+    - file:   robots.txt
 
 # ------------------------------------------------------------------------------
 # Templates
@@ -35,18 +35,21 @@ templates: endpoints/www/templates
 # Session Variables
 # ------------------------------------------------------------------------------
 session:
-    cookie: yoi-session
+    # HTTP Request Header
     rest:   yoi-session
+    # Cookie Request
+    cookie: yoi-session
+    domain: ""
     expire: 86400
 
 # ------------------------------------------------------------------------------
 # CRON Jobs
 # ------------------------------------------------------------------------------
-# crons:
-#     - name    : Example of 5 seconds job
-#       schedule: "*/5 * * * * *"
-#       file    : example
-#       timezone: Europe/Madrid
+crons:
+    - name    : Example of 5 seconds job
+      schedule: "*/5 * * * * *"
+      file    : example
+      timezone: Europe/Madrid
 
 # ------------------------------------------------------------------------------
 # CORS Properties
