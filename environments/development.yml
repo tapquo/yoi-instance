@@ -1,23 +1,26 @@
 server:
     host: localhost
     port: 1337
+    # https:
+    #   key         : YOUR_HTTPS_KEY.key
+    #   certificate : YOUR_HTTPS_CERTIFICATE.crt
 
 log:
     request: true
     response: true
 
-mongo:
-    - name    : primary
-      host    : localhost
-      port    : 27017
-      db      : db_name
-      user    : db_user
-      password: db_password
+# mongo:
+#     - name    : primary
+#       host    : localhost
+#       port    : 27017
+#       db      : db_name
+#       user    : db_user
+#       password: db_password
 
-redis:
-    host      : localhost
-    port      : 6379
+# redis:
+#     host      : localhost
+#     port      : 6379
 
-appnima:
-    key: YOUR_APPNIMA_KEY
-    host: http://api.appnima.com/
+# appnima:
+#     key: YOUR_APPNIMA_KEY
+#     host: http://api.appnima.com/
