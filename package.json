@@ -4,12 +4,17 @@
   "description"     : "Easy (but powerful) example of YOI Instance",
   "homepage"        : "http://",
   "author"          : "Javi Jimenez <javi@tapquo.com>",
+
   "dependencies": {
     "coffee-script" : "*",
     "yoi"           : "*" },
-  "devDependencies" : {},
+
+  "devDependencies" : {
+    "grunt-nodemon" : "*"},
+
   "scripts"         : {
     "start": "node yoi.js" ,
     "test": "node yoitest.js" },
+
   "engines"         : { "node": "*"}
 }
