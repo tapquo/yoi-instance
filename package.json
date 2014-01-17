@@ -1,22 +1,20 @@
 {
-  "name": "yoi-instance",
-  "version": "0.10.03",
-  "description": "Easy (but powerful) example of YOI Instance",
-  "homepage": "http://",
-  "author": "Javi Jimenez <javi@tapquo.com>",
+  "name"            : "yoi-instance",
+  "version"         : "0.10.03",
+  "description"     : "Easy (but powerful) example of YOI Instance",
+  "homepage"        : "http://",
+  "author"          : "Javi Jimenez <javi@tapquo.com>",
+
   "dependencies": {
-    "coffee-script": "*",
-    "yoi": "*"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-nodemon": "~0.1.2"
-  },
-  "scripts": {
-    "start": "node yoi.js",
-    "test": "node yoitest.js"
-  },
-  "engines": {
-    "node": "*"
-  }
+    "coffee-script" : "*",
+    "yoi"           : "*" },
+
+  "devDependencies" : {
+    "grunt-nodemon" : "*"},
+
+  "scripts"         : {
+    "start": "node yoi.js" ,
+    "test": "node yoitest.js" },
+
+  "engines"         : { "node": "*"}
 }
