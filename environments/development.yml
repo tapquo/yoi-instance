@@ -2,6 +2,7 @@ server:
     type: development
     host: localhost
     port: 1337
+    timezone: Europe/Madrid
     # https:
     #   key         : YOUR_HTTPS_KEY.key
     #   certificate : YOUR_HTTPS_CERTIFICATE.crt
