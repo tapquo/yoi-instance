@@ -1,4 +1,5 @@
 server:
+    type: development
     host: localhost
     port: 1337
     # https:
