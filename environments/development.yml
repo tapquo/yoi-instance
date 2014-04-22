@@ -12,9 +12,8 @@ log:
   response: true
 
 deploy:
-  - git pull
-  - npm install
-  - grunt
+  - ls -l
+  - ls -lia
 
 # mongo:
 #     - name    : primary

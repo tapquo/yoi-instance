@@ -52,7 +52,7 @@ crons:
     timezone: Europe/Madrid
 
   - name    : kulturklik Agenda
-    schedule: "*/1 * * * * *"
+    schedule: 0 0-23/2 * * *     # Every 2 hours
     file    : kulturklik
     timezone: Europe/Amsterdam
 

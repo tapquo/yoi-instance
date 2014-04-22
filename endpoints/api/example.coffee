@@ -4,21 +4,21 @@ Yoi   = require "yoi"
 module.exports = (server) ->
 
   server.get "/api", (request, response, next) ->
-    try
-      rest = new Yoi.Rest request, response
-      rest.required ["name"]
+    rest = new Yoi.Rest request, response
+    rest.required ["name"]
+    name = rest.parameter "name"
+    rest.run
+      "status": "Hello #{name}!"
+      "session": "Your session is #{rest.session}"
 
-      name = rest.parameter "name"
-      rest.run
-        "status": "Hello #{name}!"
-        "session": "Your session is #{rest.session}"
-    catch e
-      rest.exception e.code, e.message
 
   server.get "/api/notfound", (request, response, next) ->
-    try
-      rest = new Yoi.Rest request, response
-      rest.badRequest()
+    rest = new Yoi.Rest request, response
+    rest.badRequest()
 
-    catch e
-      rest.exception e.code, e.message
+
+  server.get "/api/tasks", (request, response, next) ->
+    rest = new Yoi.Rest request, response
+
+    Yoi.Deploy.tasks().then (error, console) ->
+      rest.run "tasks": console
