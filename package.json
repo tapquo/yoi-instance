@@ -1,6 +1,6 @@
 {
   "name"            : "yoi-instance",
-  "version"         : "0.10.03",
+  "version"         : "1.04.22",
   "description"     : "Easy (but powerful) example of YOI Instance",
   "homepage"        : "http://",
   "author"          : "Javi Jimenez <javi@tapquo.com>",
@@ -9,7 +9,7 @@
     "yoi"           : "*" },
   "devDependencies" : {},
   "scripts"         : {
-    "start": "node yoi.js" ,
+    "start": "node yoi.js yoi development" ,
     "test": "node yoitest.js" },
   "engines"         : { "node": "*"}
 }
