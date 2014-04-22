@@ -2,12 +2,15 @@
 
 Yoi = require "yoi"
 
-class Cron extends Yoi.Cron 
+class Example extends Yoi.Cron
 
-  counter = 0
+  count = 0
 
   execute: ->
-    counter++
-    console.log " [cron] #{counter}"
+    count++
 
-exports = module.exports = Cron
+  stop: ->
+    super
+    console.log "count: #{count}"
+
+exports = module.exports = Example
