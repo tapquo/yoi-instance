@@ -10,19 +10,8 @@ C   =
   DOMAIN    : "http://www.kulturklik.euskadi.net"
   QUERY     : "/kat-cat/agenda/?view=list&lang=es&kat-cat="
   CATEGORIES: [
-    "ikusizko-arteak-artes-visuales"
-    "arte-eszenikoak-artes-escenicas"
     "musika-musica"
     "ikus-entzunezkoak-audiovisual"
-    "literatura"
-    "artxibategiak-liburutegiak-eta-mediatekak-archivos-bibliotecas-y-mediatecas"
-    "museoak-museo"
-    "ondarea-patrimonio"
-    "artisautza-artesania"
-    "joerak-tendencias"
-    "arlo-berriak-diseinua-bestelakoak-nuevos-medios-diseno-otros"
-    "kultura-euskaraz-cultura-en-euskera"
-    "sormen-lantegiak-fabricas-de-creacion"
   ]
   CITY:
     BILBAO: 167
@@ -43,6 +32,7 @@ class KulturKlik extends Yoi.Crawler
     for result in @results
       console.log " - #{result.title} (#{result.category} / #{result.type})"
     @results = []
+    @stop()
 
   page: (error, response, body) ->
     next_page = body.find(".pagina_selected_agenda").next().children("a").attr("href")

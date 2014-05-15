@@ -17,11 +17,11 @@ deploy:
 
 # mongo:
 #     - name    : primary
-#       host    : localhost
+#       host    : 192.168.1.200
 #       port    : 27017
-#       db      : db_name
-#       user    : db_user
-#       password: db_password
+#       db      : crawler
+#       user    : admin
+#       password: admin
 
 # redis:
 #     host      : localhost
