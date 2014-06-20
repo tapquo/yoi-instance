@@ -51,13 +51,6 @@ crons:
   #   file    : example
   #   timezone: Europe/Madrid
 
-  - name    : kulturklik Agenda
-    schedule: "*/5 * * * * *"
-    # schedule: 0 0-23/2 * * *     # Every 2 hours
-    file    : kulturklik
-    timezone: Europe/Amsterdam
-
-
 # ------------------------------------------------------------------------------
 # CORS Properties
 # ------------------------------------------------------------------------------
