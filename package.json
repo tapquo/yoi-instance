@@ -1,15 +1,23 @@
 {
-  "name"            : "yoi-instance",
-  "version"         : "1.04.22",
-  "description"     : "Easy (but powerful) example of YOI Instance",
-  "homepage"        : "http://",
-  "author"          : "Javi Jimenez <javi@tapquo.com>",
+  "name": "yoi-instance",
+  "version": "1.04.22",
+  "description": "Easy (but powerful) example of YOI Instance",
+  "homepage": "http://",
+  "author": "Javi Jimenez <javi@tapquo.com>",
   "dependencies": {
-    "coffee-script" : "*",
-    "yoi"           : "*" },
-  "devDependencies" : {},
-  "scripts"         : {
-    "start": "node yoi.js yoi development" ,
-    "test": "node yoitest.js" },
-  "engines"         : { "node": "*"}
+    "coffee-script": "*",
+    "yoi": "*",
+    "@snyk/protect": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node yoi.js yoi development",
+    "test": "node yoitest.js",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "snyk": true
 }
